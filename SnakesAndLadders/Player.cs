@@ -14,8 +14,8 @@
         public void Roll()
         {
             var positionBeforeRoll = Square;
-            var square = _die.Roll();
-            Square += square;
+            var numberRolled = _die.Roll();
+            Square += numberRolled;
             if (Square > 100)
                 Square = positionBeforeRoll;
         }
